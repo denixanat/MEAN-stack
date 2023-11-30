@@ -1,0 +1,5 @@
+<div [ngClass]="{'done' :Perro.isDone, 'notDone': !Perro.isDone}"><br>
+    <p>{{Perro.name}}</p>
+    <img src="{{Perro.image}}" alt="">
+    <app-controls [PerroB]="Perro"></app-controls>
+</div>

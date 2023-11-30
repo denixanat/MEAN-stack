@@ -1,0 +1,14 @@
+button {
+    transition-duration: 0.4s;
+    background-color:darkolivegreen;
+    border-radius: 10px;
+    color: white; 
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+  }
+  
+button:hover {
+    background-color: brown; /* Green */
+    color: white;
+}

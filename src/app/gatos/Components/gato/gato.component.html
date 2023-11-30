@@ -1,0 +1,10 @@
+<div [ngClass]="{'done' :Gato.isDone, 'notDone': !Gato.isDone}"><br>
+    <p>Id:{{Gato.id}} {{Gato.name}}</p>
+    <img src="{{Gato.image}}" alt="">
+    <app-controls [GatoB]="Gato"></app-controls>
+</div>
+
+<!--<div>
+    <p>{{Gato.name}}</p>
+    <img src="{{Gato.image}}" alt="">
+</div>-->

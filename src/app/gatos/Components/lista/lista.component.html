@@ -1,0 +1,38 @@
+<br>
+<label for="searchTerm">Buscar por nombre:</label>
+<input [(ngModel)]="searchTerm" type="text" id="searchTerm">
+<button type="button" (click)="searchByTerm()">Buscar</button>
+
+<br>
+
+<h1>Añadir gato</h1>
+
+<label for="idgato">Id:</label>
+<input [(ngModel)]="newGato.id" type="text" id="idgato"><br><br>
+
+<label for="nombregato">Nombre:</label>
+<input [(ngModel)]="newGato.name" type="text" id="nombregato"><br><br>
+
+<label for="imagengato">Imagen:</label>
+<input [(ngModel)]="newGato.image" type="text" id="imagengato"><br><br>
+
+<button type="button" (click)="addGato()">Añadir</button>
+
+<h1>Editar Gato</h1>
+
+<label for="editId">Id:</label>
+<input [(ngModel)]="editedGato.id" type="text" id="editId"><br><br>
+
+<label for="editName">Nombre:</label>
+<input [(ngModel)]="editedGato.name" type="text" id="editName"><br><br>
+
+<label for="editImage">Imagen:</label>
+<input [(ngModel)]="editedGato.image" type="text" id="editImage"><br><br>
+
+<button type="button" (click)="editGato()">Editar</button>
+
+<h1>Lista de Gatos</h1>
+<button (click)="onsortGatosAlphabetically()">Ordenar</button>
+<div>
+    <app-gato *ngFor="let Gato of gatos" [Gato]="Gato"></app-gato>
+</div>
